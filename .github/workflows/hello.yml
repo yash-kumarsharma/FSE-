@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Print message
         run: echo "Hello, Github Actions!"
-             echo "Yash Kumar Sharma"
+             "\n Yash Kumar Sharma"
