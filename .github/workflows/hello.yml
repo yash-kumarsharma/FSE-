@@ -9,5 +9,12 @@ jobs:
     steps:
       - name: Print message
         run: echo "Hello, Github Actions!"
-      - name: Print message
+      - name: Print name
         run: echo "Yash Kumar Sharma"
+  
+  say-bye:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Bye Message
+        run: echo "Goodbye from second job"
