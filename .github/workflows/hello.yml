@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Print message
-        run: echo "Hello, Github Actions!"
+        run: echo "Hello, Yash!"
       - name: Print name
         run: echo "Yash Kumar Sharma"
   
