@@ -18,3 +18,11 @@ jobs:
     steps:
       - name: Print Bye Message
         run: echo "Goodbye from second job"
+
+deploy-app:
+    needs: say-hello
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploying app
+        run: echo "Deploying app to production"
