@@ -4,12 +4,19 @@ on: push
 
 jobs:
 
-  say-hello:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: list file
-        run: ls
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # - name: list file
+        # run: ls
+      - name: Check Node version
+        run: node -v

@@ -1,14 +1,16 @@
-# s
+name: My workflow
 
-# jobs:
-#   say-hello:
-#     runs-on: ubuntu-latest
+on: push
 
-#     steps:
-#       - name: Print message
-#         run: echo "Hello, Yash!"
-#       - name: Print name
-#         run: echo "Yash Kumar Sharma"
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Hello, Yash!"
+      - name: Print name
+        run: echo "Yash Kumar Sharma"
   
 #   say-bye:
 #     runs-on: ubuntu-latest
