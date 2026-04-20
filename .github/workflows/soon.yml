@@ -20,3 +20,6 @@ jobs:
         # run: ls
       - name: Check Node version
         run: node -v
+
+      - name: Check NPM version
+        run: npm -v
