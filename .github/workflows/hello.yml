@@ -1,28 +1,20 @@
-name: My first workflow
+# s
 
-on: push
+# jobs:
+#   say-hello:
+#     runs-on: ubuntu-latest
 
-jobs:
-  say-hello:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Print message
-        run: echo "Hello, Yash!"
-      - name: Print name
-        run: echo "Yash Kumar Sharma"
+#     steps:
+#       - name: Print message
+#         run: echo "Hello, Yash!"
+#       - name: Print name
+#         run: echo "Yash Kumar Sharma"
   
-  say-bye:
-    runs-on: ubuntu-latest
+#   say-bye:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Print Bye Message
-        run: echo "Goodbye from second job"
+#     steps:
+#       - name: Print Bye Message
+#         run: echo "Goodbye from second job"
 
-deploy-app:
-    needs: say-hello
-    runs-on: ubuntu-latest
 
-    steps:
-      - name: Deploying app
-        run: echo "Deploying app to production"
